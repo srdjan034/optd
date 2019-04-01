@@ -1,0 +1,9 @@
+{
+	"nodeCount": 1,
+	"processorsPerNode": 50,
+	"producerCount": 45,
+	"consumerCount": 4,
+	"partialTrajectoryLength": 382493,
+	"chunkSize": 213371,
+	"particleCount": 1024
+}

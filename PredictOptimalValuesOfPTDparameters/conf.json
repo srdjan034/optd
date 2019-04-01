@@ -1,0 +1,11 @@
+{
+	"AlgorithmGA": "GA",
+	"NumberOfEvulations" : 1,
+	"PopulationSize": 100,
+	"sbx.rate": 1,
+	"sbx.distributionIndex": 15.0,
+	"pm.rate": 0.5,
+	"pm.distributionIndex": 20.0,
+	"QueueOverflowPredictionModelPath" : "mlModel/QueueOverflowPrediction.model",
+	"ExecutionTimePredictionModelPath" : "mlModel/ExecutionTimePrediction.model"
+}  
