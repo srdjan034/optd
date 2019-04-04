@@ -5,7 +5,6 @@
 
 cd $PBS_O_WORKDIR
 
-module load openmpi-pmf-x86_64
 mpicc -O2 ptd.c -o ptd -lm
 
 time mpirun ./ptd
