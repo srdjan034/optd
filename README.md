@@ -25,6 +25,7 @@ time mpirun ./ptd
 
 Number of nodes and processors per nodes can be set in file <i>run_ptd_job.sub</i>. Run the script using <i>qsub run_ptd_job.sub</i>
 
+#### PTD parameter values
 
 All PTD parameter values can be set in file <i>PTD_optimal_values.json</i>.
 
@@ -40,6 +41,7 @@ All PTD parameter values can be set in file <i>PTD_optimal_values.json</i>.
 }
 ```
 
+This configuration file can be automatically generated as explained in the section below
 
 ### Predicting optimal PTD parametter values in file <i>PTD_optimal_values.json</i>
 
