@@ -8,10 +8,23 @@ We have implemented OPTD in C, using standard MPI for message passing and benchm
 
 ### Run MPI implementation on cluster
 
-It is necessary to start the cluster job by sumbiting the PBS script <i>run_ptd_job.sub</i>. Number of nodes and processors per nodes can be set in file <i>run_ptd_job.sub</i>.
+It is necessary to start the cluster job by sumbiting the PBS script <i>run_ptd_job.sub</i>. 
+
 ```
-qsub run_ptd_job.sub
+#!/bin/sh
+#PBS -N OPTD
+#PBS -q batch
+#PBS -l nodes=1:ppn=16
+
+cd $PBS_O_WORKDIR
+
+mpicc -O2 ptd.c -o ptd -lm
+
+time mpirun ./ptd
 ```
+
+Number of nodes and processors per nodes can be set in file <i>run_ptd_job.sub</i>. Run the script using <i>qsub run_ptd_job.sub</i>
+
 
 All PTD parameter values can be set in file <i>PTD_optimal_values.json</i>.
 
