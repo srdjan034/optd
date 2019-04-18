@@ -23,7 +23,7 @@ mpicc -O2 ptd.c -o ptd -lm
 time mpirun ./ptd
 ```
 
-Number of nodes and processors per nodes can be set in file <i>run_ptd_job.sub</i>. Run the script using <i>qsub run_ptd_job.sub</i>
+Run the script using <i>qsub run_ptd_job.sub</i>
 
 #### PTD parameter values
 
